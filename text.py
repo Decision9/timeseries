@@ -11,4 +11,3 @@ data = feather.read_dataframe("house_sales.ftr")
 
 L = [Matrix([1,2,3]),Matrix([2,1,3]),Matrix([3,2,1])]
 O1 = GramSchmidt(L,True)
-
