@@ -35,8 +35,8 @@ fig = plot_pacf(data['中国:固定资产投资完成额:累计值'],lags=30, ax
 
 print('以PACF来看，模型大概为2阶。')
 
-pmax = 10
-qmax = 10
+pmax = 5
+qmax = 5
 bic_matrix =[]#bic矩阵
 for p in range(pmax+1):
     tmp = []
@@ -60,5 +60,5 @@ plt.figure(figsize=(12,8))
 plt.plot(resid, label = '混合模型(3,0,3)')
 plt.show()
 
-# print('该数据建模时，数据都较为不理想，仍需多学习相关知识在进行建模。')
+print('该数据模型拟合效果较差.')
 
